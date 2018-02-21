@@ -3,7 +3,8 @@
 
 int main()
 {
-    printf("Programa para manipulacion de matrices\n");
+    printf("Matrix manipuluation program.");
+
 
     return 0;
 }
