@@ -7,7 +7,7 @@ Compile with:
 -----------------------------------
 
 ```bash
-gcc main.cpp -o main
+g++ main.cpp -o main
 ```
 
 Run with:

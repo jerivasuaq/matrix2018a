@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 
 #include "matrix.h"
 
+using namespace std;
 int main()
 {
-    printf("Matrix manipuluation program.");
+    cout<<"Matrix manipuluation program.\n";
 
     Matrix m();
 
