@@ -7,9 +7,13 @@ int main()
 {
     cout<<"Matrix manipuluation program.\n";
 
-    Matrix m();
-
+    Matrix m;
+    
+    m.read();
+//    m.print();
 
     return 0;
 }
+
+
 
