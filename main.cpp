@@ -12,6 +12,9 @@ int main()
     m.read();
     m.print();
 
+    m.scalarMul(5);
+    m.print();
+
     return 0;
 }
 

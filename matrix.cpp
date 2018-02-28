@@ -36,3 +36,10 @@ void Matrix::print()
     }
 }
 
+void Matrix::scalarMul(float x)
+{
+
+    for(int i=0; i<NRows; i++)
+        for(int j=0; j<NCols; j++)
+            M[i][j]*= x;
+}
