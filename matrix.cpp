@@ -17,9 +17,10 @@ void Matrix::read(){
         {
                 for (int j = 0; j < NCols; j++)
                 {
-                        cin >> M[i][j];
+                cout<<"M["<<i<<"],["<<j<<"]: ";cin >> M[i][j];
                 }
         }
+	cout<<endl;
 }
 
 void Matrix::print()
@@ -33,6 +34,20 @@ void Matrix::print()
             cout<<M[i][j]<<" ";
         }
         cout<<endl;
+    }
+}
+
+void Matrix::trans()
+{
+    cout<<"La transpuesta es:"<<endl;
+    for (int i=0; i<NRows; i++)
+    {
+        for(int j=0; j<NCols; j++)                                                       
+        {                                                                              
+            N[i][j] = M[j][i];                                                           
+            cout<<N[i][j]<<" ";
+        }
+        cout<<endl; 
     }
 }
 
