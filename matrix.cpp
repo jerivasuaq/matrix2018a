@@ -23,3 +23,15 @@ void Matrix::read(){
         }
 }
 
+void Matrix::print()
+{
+    for(int i=0; i<NRows; i++)
+    {
+        for(int j=0; j<NCols; j++)
+        {
+	    cout<<M[i][j]<<" ";
+        }
+	cout<<endl;
+    }
+}
+

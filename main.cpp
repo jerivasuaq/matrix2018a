@@ -10,7 +10,7 @@ int main()
     Matrix m;
     
     m.read();
-//    m.print();
+    m.print();
 
     return 0;
 }
