@@ -10,6 +10,13 @@ Compile with:
 g++ matrix.cpp main.cpp -o main
 ```
 
+
+Operations available:
+-----------------------------------
+
+* Scalar multiplication
+
+
 Run with:
 -----------------------------------
 
