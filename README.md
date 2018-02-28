@@ -7,7 +7,7 @@ Compile with:
 -----------------------------------
 
 ```bash
-g++ main.cpp -o main
+g++ matrix.cpp main.cpp -o main
 ```
 
 Run with:

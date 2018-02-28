@@ -9,7 +9,6 @@ Matrix::Matrix()
 }
 
 void Matrix::read(){
-        int NRows, NCols;
         cout << "Ingrese de NRows" << endl;
         cin >> NRows;
         cout << "Ingrese de NCols" << endl;
@@ -25,13 +24,15 @@ void Matrix::read(){
 
 void Matrix::print()
 {
+    cout<<"NRows: "<<NRows<<endl;
+    cout<<"NCols: "<<NCols<<endl;
     for(int i=0; i<NRows; i++)
     {
         for(int j=0; j<NCols; j++)
         {
-	    cout<<M[i][j]<<" ";
+            cout<<M[i][j]<<" ";
         }
-	cout<<endl;
+        cout<<endl;
     }
 }
 
