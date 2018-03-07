@@ -24,7 +24,7 @@ int main()
     m.scalarMul(5);
     m.print();
     cout<<"The result of multiplication is: \n";
-    m.multiplication();
-    m.print();
+    result=m*a;
+    result.print();
     return 0;
 }

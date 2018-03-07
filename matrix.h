@@ -12,11 +12,11 @@ public:
     void scalarMul(float);
     float M[100][100];
     
-    void multiplication();
     int NCols;
     int NRows;
     Matrix& operator=(const Matrix& init);
     Matrix operator+(const Matrix& matrix) const;
+    Matrix operator*(const Matrix& matrix) const;
     Matrix operator-(const Matrix& matrix) const;
 };
 #endif

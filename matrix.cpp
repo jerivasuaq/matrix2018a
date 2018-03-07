@@ -2,14 +2,8 @@
 #include "matrix.h"
 
 using namespace std;
-
-//#ifdef _Matrix_
-
-
 Matrix::Matrix()
-{
-    cout<<"Initialzing matrix\n";
-}  
+{}  
 
 void Matrix::read(){
         cout << "Ingrese de NRows" << endl;
@@ -48,10 +42,9 @@ void Matrix::scalarMul(float x)
             M[i][j]*= x;
 }
 
-void Matrix::multiplication ()
+Matrix Matrix::operator*(const Matrix& n) const
 {
-   Matrix n,c;
-   n.read();
+   Matrix c;
    if (NCols==n.NRows){
     for(int i=0; i<NRows; i++){
         for(int j=0; j<n.NCols; j++){
@@ -60,14 +53,10 @@ void Matrix::multiplication ()
                c.M[i][j] = c.M[i][j] +(M[i][H] * n.M[H][j]);
         }
      }
-     for(int i=0; i<NRows; i++){
-        for(int j=0; j<n.NCols; j++)
-               M[i][j] = c.M[i][j];
-     }
-     NCols = n.NCols;
-  }
- else
-   cout<<"No se puede multiplicar "<<endl;
+   }
+   else
+     cout<<"No se puede multiplicar "<<endl;
+   return c;
 }
 
 Matrix& Matrix::operator=(const Matrix& init)
