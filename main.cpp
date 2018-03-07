@@ -14,14 +14,16 @@ int main()
     
     a=m;
     a.print();
+    cout<<"The result of addition is:\n";
     result=m+a;
     result.print();
+    cout<<"The result of substraction is:\n";
     result=m-a;
     result.print();
-
+    cout<<"The result of scalarMult(5) is: \n";
     m.scalarMul(5);
     m.print();
-
+    cout<<"The result of multiplication is: \n";
     m.multiplication();
     m.print();
     return 0;
