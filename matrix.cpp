@@ -69,3 +69,50 @@ void Matrix::multiplication ()
  else
    cout<<"No se puede multiplicar "<<endl;
 }
+
+Matrix& Matrix::operator=(const Matrix& init)
+{
+    this->NRows=0;
+    this->NCols=0;
+
+    this->NRows=init.NRows;
+    this->NCols=init.NCols;
+
+    for(int i=0; i<NRows; i++)
+    {
+        for(int j=0; j<NCols; j++)
+        {
+            this->M[i][j]=init.M[i][j];
+        }
+    }
+
+    return *this;
+}
+
+Matrix Matrix::operator+(const Matrix& matrix) const
+{
+    Matrix tmp;
+    tmp.NCols = this->NCols;
+    tmp.NRows = this->NRows;
+    for(int i=0; i<NRows; i++){
+        for(int j=0; j<NCols; j++){
+            tmp.M[i][j]=0;
+            tmp.M[i][j]=this->M[i][j]+matrix.M[i][j];
+        }
+    }
+    return tmp;
+}
+
+Matrix Matrix::operator-(const Matrix& matrix) const
+{
+    Matrix tmp;
+    tmp.NCols = this->NCols;
+    tmp.NRows = this->NRows;
+    for(int i=0; i<NRows; i++){
+        for(int j=0; j<NCols; j++){
+            tmp.M[i][j]=0;
+            tmp.M[i][j]=this->M[i][j]-matrix.M[i][j];
+        }
+    }
+    return tmp;
+}
