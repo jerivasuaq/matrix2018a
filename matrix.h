@@ -1,3 +1,5 @@
+#include <iostream>
+
 #ifndef _MATRIX_H
 #define _MATRIX_H
 
@@ -11,8 +13,12 @@ public:
     void trans();
     float M[100][100];
     float N[100][100];
+    
     int NCols;
     int NRows;
+    Matrix& operator=(const Matrix& init);
+    Matrix operator+(const Matrix& matrix) const;
+    Matrix operator*(const Matrix& matrix) const;
+    Matrix operator-(const Matrix& matrix) const;
 };
-
 #endif
