@@ -7,10 +7,16 @@ int main()
 {
     cout<<"Matrix manipuluation program.\n";
 
-    Matrix m;
+    Matrix m, a, result;
     
     m.read();
     m.print();
+    a=m;
+    a.print();
+    result=m+a;
+    result.print();
+    result=m-a;
+    result.print();
 
     m.scalarMul(5);
     m.print();
