@@ -5,14 +5,14 @@ using namespace std;
 
 Matrix::Matrix()
 {
-        cout<<"Initialzing matrix\n";
 }
 
 void Matrix::read(){
-        cout << "Ingrese de NRows" << endl;
+        cout << "Input the number of rows: " << endl;
         cin >> NRows;
-        cout << "Ingrese de NCols" << endl;
+        cout << "Input the number of columns: " << endl;
         cin >> NCols;
+        cout << "Input the elements of the matrix: " << endl;
         for (int i = 0; i < NRows; i++)
         {
                 for (int j = 0; j < NCols; j++)
